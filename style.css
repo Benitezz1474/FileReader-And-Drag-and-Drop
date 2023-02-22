@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* color: #fff; */
+}
+
+:root{
+    --width:0%;
+    --bgColor : rgb(18, 101, 136); 
+}
+
+input{
+    width: 70%;
+    height: auto;
+    padding: 10px 0;
+}
+
+
+
+.loadBar_text{
+    color: #000;
+    position: absolute;
+    top: 0;
+    left: calc(110px);
+
+}
+
+
+.dropZone{
+    width: 100%;
+    max-width: 500px;
+    max-height: 500px;
+    height: 100%;
+    padding: 200px 0;
+    border: 5px dashed rgb(131, 131, 131);
+    background-color: #e2e1e1;
+    transition: all 0.4s;
+}
+
+/* dropZone:hover class and DropZoneHover but with javascript */
+
+.dropZone:hover, .dropZoneHover{
+    transition: all 0.4s;
+    cursor: grab;
+    background-color: rgb(90, 89, 89);
+    border: 5px dashed rgb(182, 180, 180);
+    color: #fff;
+
+}
+
+
+
+/*  */
+
+.loadBar_content {
+
+    width: 100%;
+    max-width: 250px;
+    height: 34px;
+    padding: 1px 0;
+    background-color: rgb(152, 151, 151);
+    margin: 10px 0;
+    border-radius: 5px;
+
+    
+}
+
+.loadBar_progress{
+    width: var(--width);
+    height: 100%;
+    background-color: var(--bgColor);
+    position: relative;
+
+  
+}
+
+.loadBar_progress h4{
+   
+    position: absolute;
+    left: 110px;
+    
+}
+
+#file_title{
+    
+    margin: 10px 0;
+    width: 100%;
+    max-width: 300px;
+    height: 24px;
+    text-align: center;
+    overflow: hidden;
+}
+
